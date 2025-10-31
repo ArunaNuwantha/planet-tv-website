@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 export default defineConfig({
   base: "/planet-tv-website/",
   build: {
-    outDir: "dist",
+    outDir: "docs",
     assetsDir: "assets",
   },
 });
