@@ -1,0 +1,23 @@
+{
+    "name": "Planet TV - Your Ultimate Streaming Companion",
+    "short_name": "Planet TV",
+    "description": "Experience premium streaming with elegant design and seamless performance. Your gateway to endless entertainment.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#1a1a1a",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/tv-icon.png",
+            "sizes": "any",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": [
+        "entertainment",
+        "multimedia"
+    ],
+    "lang": "en"
+}
