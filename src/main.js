@@ -1,4 +1,5 @@
 import "./style.css";
+import tvIconUrl from "/tv-icon.png";
 
 // Page content templates
 const pages = {
@@ -7,7 +8,7 @@ const pages = {
       <div class="container">
         <nav class="nav">
           <div class="logo">
-            <img src="/tv-icon.png" alt="Planet TV" class="logo-icon">
+            <img src="${tvIconUrl}" alt="Planet TV" class="logo-icon">
             <span>Planet TV</span>
           </div>
           <ul class="nav-links">
@@ -85,7 +86,7 @@ const pages = {
       <div class="container">
         <nav class="nav">
           <div class="logo">
-            <img src="/tv-icon.png" alt="Planet TV" class="logo-icon">
+            <img src="${tvIconUrl}" alt="Planet TV" class="logo-icon">
             <span>Planet TV</span>
           </div>
           <ul class="nav-links">
@@ -145,7 +146,7 @@ const pages = {
       <div class="container">
         <nav class="nav">
           <div class="logo">
-            <img src="/tv-icon.png" alt="Planet TV" class="logo-icon">
+            <img src="${tvIconUrl}" alt="Planet TV" class="logo-icon">
             <span>Planet TV</span>
           </div>
           <ul class="nav-links">
@@ -231,7 +232,7 @@ const pages = {
       <div class="container">
         <nav class="nav">
           <div class="logo">
-            <img src="/tv-icon.png" alt="Planet TV" class="logo-icon">
+            <img src="${tvIconUrl}" alt="Planet TV" class="logo-icon">
             <span>Planet TV</span>
           </div>
           <ul class="nav-links">

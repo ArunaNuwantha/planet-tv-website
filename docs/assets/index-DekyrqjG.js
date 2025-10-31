@@ -1,9 +1,9 @@
-(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))l(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const r of t.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&l(r)}).observe(document,{childList:!0,subtree:!0});function o(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function l(e){if(e.ep)return;e.ep=!0;const t=o(e);fetch(e.href,t)}})();const s={home:`
+(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))c(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const s of t.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&c(s)}).observe(document,{childList:!0,subtree:!0});function o(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function c(e){if(e.ep)return;e.ep=!0;const t=o(e);fetch(e.href,t)}})();const r="/planet-tv-website/tv-icon.png",n={home:`
     <header class="header">
       <div class="container">
         <nav class="nav">
           <div class="logo">
-            <img src="/tv-icon.png" alt="Planet TV" class="logo-icon">
+            <img src="${r}" alt="Planet TV" class="logo-icon">
             <span>Planet TV</span>
           </div>
           <ul class="nav-links">
@@ -79,7 +79,7 @@
       <div class="container">
         <nav class="nav">
           <div class="logo">
-            <img src="/tv-icon.png" alt="Planet TV" class="logo-icon">
+            <img src="${r}" alt="Planet TV" class="logo-icon">
             <span>Planet TV</span>
           </div>
           <ul class="nav-links">
@@ -137,7 +137,7 @@
       <div class="container">
         <nav class="nav">
           <div class="logo">
-            <img src="/tv-icon.png" alt="Planet TV" class="logo-icon">
+            <img src="${r}" alt="Planet TV" class="logo-icon">
             <span>Planet TV</span>
           </div>
           <ul class="nav-links">
@@ -221,7 +221,7 @@
       <div class="container">
         <nav class="nav">
           <div class="logo">
-            <img src="/tv-icon.png" alt="Planet TV" class="logo-icon">
+            <img src="${r}" alt="Planet TV" class="logo-icon">
             <span>Planet TV</span>
           </div>
           <ul class="nav-links">
@@ -322,4 +322,4 @@
         </div>
       </div>
     </footer>
-  `};function n(i){const a=document.querySelector("#app"),o=s[i]||s.home;a.innerHTML=`<div class="page">${o}</div>`,setTimeout(()=>{document.querySelector(".page").classList.add("active")},50),history.pushState({page:i},"",`#${i}`),c()}function c(){document.querySelectorAll("[data-page]").forEach(i=>{i.addEventListener("click",a=>{a.preventDefault();const o=a.target.getAttribute("data-page");n(o)})})}window.addEventListener("popstate",i=>{const a=i.state?.page||"home";n(a)});function p(){const i=window.location.hash.slice(1),a=i&&s[i]?i:"home";n(a)}p();
+  `};function l(a){const i=document.querySelector("#app"),o=n[a]||n.home;i.innerHTML=`<div class="page">${o}</div>`,setTimeout(()=>{document.querySelector(".page").classList.add("active")},50),history.pushState({page:a},"",`#${a}`),p()}function p(){document.querySelectorAll("[data-page]").forEach(a=>{a.addEventListener("click",i=>{i.preventDefault();const o=i.target.getAttribute("data-page");l(o)})})}window.addEventListener("popstate",a=>{const i=a.state?.page||"home";l(i)});function d(){const a=window.location.hash.slice(1),i=a&&n[a]?a:"home";l(i)}d();
